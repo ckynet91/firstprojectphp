@@ -24,7 +24,7 @@ class CatalogController
 		echo '<br>Page: ' . $page;
 
 		$categories =[];
-		$categories = Category::getCategoriesList();
+		// $categories = Category::getCategoriesList();
 
 		$categoryProducts =[];
 		$categoryProducts = Product::getProductsListByCategory($categoryId, $page);

@@ -75,7 +75,7 @@
         <div class="row">
           <div class="col-sm-6 text-center">
             <div class="featured">
-              <a href="#" class="featured-img" style="background-image: url(../../template/images/men.jpg);"></a>
+              <a href="/men" class="featured-img" style="background-image: url(../../template/images/men.jpg);"></a>
               <div class="desc">
                 <h2><a href="#">Магазин мужской коллекции</a></h2>
               </div>
@@ -83,7 +83,7 @@
           </div>
           <div class="col-sm-6 text-center">
             <div class="featured">
-              <a href="#" class="featured-img" style="background-image: url(../../template/images/women.jpg);"></a>
+              <a href="/woman" class="featured-img" style="background-image: url(../../template/images/women.jpg);"></a>
               <div class="desc">
                 <h2><a href="#">Магазин женской коллекции</a></h2>
               </div>

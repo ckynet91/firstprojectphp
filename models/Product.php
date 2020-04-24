@@ -14,7 +14,7 @@ class Product
 
 		$productsList =[];
 
-		$result = $db->query('SELECT id, name, price, image, is_new
+		$result = $db->query('SELECT *
 								FROM product
 								WHERE status = "1"
 								ORDER BY id DESC
@@ -31,7 +31,7 @@ class Product
 		return $productsList;
 	}
 
-		public static function getProductsListByCategory($categoryID = false, $page = 1){
+		public static function getProductsListByCategory($categoryId = 1, $page = 1){
 
 		if($categoryId){
 
@@ -45,7 +45,7 @@ class Product
 									FROM product
 									WHERE status = '1' AND category ='$categoryId'
 									ORDER BY id DESC
-									LIMIT self::SHOW_BY_DEFAULT
+									LIMIT 10
 									OFFSET $offset");
 			$i = 0;
 			while ($row = $result->fetch()){
@@ -109,7 +109,7 @@ class Product
 		$result = $db->query("SELECT count(id) AS count
 								FROM product
 								WHERE status ='1'
-								AND category_id = $categoryId");
+								AND category = $categoryId");
 		$result->setFetchMode(PDO::FETCH_ASSOC);
 		$row = $result->fetch();
 

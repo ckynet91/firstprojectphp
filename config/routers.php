@@ -7,8 +7,8 @@ return array(
 	'cabinet/edit' => 'cabinet/edit', //actionEdit to CabinetController
 	'cabinet' => 'cabinet/index', //actionIndex to CabinetController
 	'catalog' => 'catalog/index', // actionIndex to CatalogController
+
 	'category/([0-9]+)/page-([0-9]+)' => 'catalog/category/$1/$2', // actionCategory to CatalogController
-	'category/([0-9]+)' => 'catalog/category/$i', //actionCategory to CatalogController
 	'cart/add/([0-9]+)' => 'cart/add/$1', // actionAdd to CartController
 	'cart/addAjax/([0-9]+)' => 'cart/addAjax/$1', // actionAddAjax to CarController
 
@@ -20,5 +20,6 @@ return array(
 	'about' => 'site/about', //actionAbout to SiteController
 	'contact' => 'site/contact', //actionContact to SiteController
 	'men' => 'men/index', // actionIndex to MenControler
+	'men/page-([0-9]+)' => 'men/$1', // actionIndex to MenControler
 	'' => 'site/index', //actionIndex to SiteController
 );
