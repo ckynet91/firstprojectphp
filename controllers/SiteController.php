@@ -12,7 +12,7 @@ class SiteController
 
 		$latestProduct = [];
 		$latestProduct = Product::getLatesProducts(5);
-
+		
 		require_once(ROOT. '/views/site/index.php');
 
 		return true;

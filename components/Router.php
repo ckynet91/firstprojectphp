@@ -33,11 +33,8 @@ class Router{
 					$segments = explode('/', $path);
 
 					$controllerName = array_shift($segments).'Controller';
-
 					$controllerName = ucfirst($controllerName);
-
 					$actionName = 'action'.ucfirst(array_shift($segments));
-
 					$paramenters = $segments;
 
 					//Подключаем файл класса-контролера
@@ -51,6 +48,7 @@ class Router{
 					$controllerObject = new $controllerName;
 
 					$result = call_user_func_array(array($controllerObject, $actionName), $paramenters);
+					
 					if($result != NULL){
 						break;
 					}

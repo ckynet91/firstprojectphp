@@ -72,14 +72,15 @@ class Product
 
 			$result = $db->query('SELECT * FROM product WHERE id=' . $id);
 			$result->setFetchMode(PDO::FETCH_ASSOC);
-
+			
 			return $result->fetch();
 		}
 	}
 
 	/**
 	 *
-	 *
+	 *@param $idsArray
+	 *@return $products
 	 */
 		public static function getProductsByIds($idsArray){
 		$products =[];

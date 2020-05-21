@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="bread"><span><a href="index.html">Home</a></span> / <span>Product Details</span></p>
+						<p class="bread"><span><a href="index.html">Главная</a></span> / <span>Product Details</span></p>
 					</div>
 				</div>
 			</div>

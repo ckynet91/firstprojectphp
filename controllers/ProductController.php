@@ -1,16 +1,16 @@
 <?php
-// // require_once ROOT . '/models/Category.php';
-// require_once ROOT . '/models/Product.php';
 
 class ProductController{
-
+	/**
+	 * @param $productId
+	 * @return mixid
+	 */
 	public function actionView($productId){
 
-		$categories = [];
-		// $categories = Category::getCategoriesList();
-
+		$product = [];
 		$product = Product::getProductById($productId);
-
+		print_r($product);
+		
 		require_once(ROOT. '/views/product/view.php');
 		return true;
 	}

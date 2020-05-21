@@ -2,7 +2,7 @@
 
 class WomanController{
 
-	public function actionIndex(){
+	public function actionIndex($id){
 
 		// echo 'Category: ' . $categoryId;
 		// echo '<br>Page: ' . $page;
@@ -11,9 +11,9 @@ class WomanController{
 		// $categories = Category::getCategoriesList();
 
 		$categoryProducts =[];
-		$categoryProducts = Product::getProductsListByCategory(2, $page = 1);
+		$categoryProducts = Product::getProductsListByCategory($id, $page = 1);
 
-		$total = Product::getTotalProductsInCategory(2);
+		$total = Product::getTotalProductsInCategory($id);
 
 		//Создадим объект Pagination постраничная навигация
 		$pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
