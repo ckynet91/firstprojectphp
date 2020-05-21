@@ -21,5 +21,7 @@ return array(
 	'contact' => 'site/contact', //actionContact to SiteController
 	'men' => 'men/index', // actionIndex to MenControler
 	'men/page-([0-9]+)' => 'men/$1', // actionIndex to MenControler
+	'woman' => 'woman/index', // actionIndex to MenControler
+	'woman/page-([0-9]+)' => 'woman/$1', // actionIndex to MenControler
 	'' => 'site/index', //actionIndex to SiteController
 );

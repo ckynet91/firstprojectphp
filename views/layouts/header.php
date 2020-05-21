@@ -62,16 +62,8 @@
               <ul>
                 <li class="active"><a href="/">Главная</a></li>
                 <li class="has-dropdown">
-                  <a href="/men">Мужские</a>
-                  <ul class="dropdown">
-                    <li><a href="/product-detail">Product Detail</a></li>
-                    <li><a href="/cart">Shopping Cart</a></li>
-                    <li><a href="/checkout">Checkout</a></li>
-                    <li><a href="/order-complete">Order Complete</a></li>
-                    <li><a href="/add-to-wishlist">Wishlist</a></li>
-                  </ul>
-                </li>
-                <li><a href="/women">Женские</a></li>
+                  <a href="/men">Мужские</a></li>
+                <li><a href="/woman">Женские</a></li>
                 <li><a href="/about">О магазине</a></li>
                 <li><a href="/contact">Контакты</a></li>
                 <!-- <li class="cart"><a href="/register">Регистрация</a></li> -->
